@@ -1,0 +1,125 @@
+.entradas-contenedor {
+    padding: 2rem;
+}
+
+.entradas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.entradas-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.tabla-entradas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-entradas thead {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+.tabla-entradas th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.tabla-entradas td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.tabla-entradas tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.badge-estado {
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.estado-borrador {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.estado-validacion {
+    background: #cce5ff;
+    color: #004085;
+}
+
+.estado-autorizada {
+    background: #d4edda;
+    color: #155724;
+}
+
+.estado-proceso {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.estado-completada {
+    background: #d4edda;
+    color: #155724;
+}
+
+.estado-rechazada {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.estado-cancelada {
+    background: #e2e3e5;
+    color: #383d41;
+}
+
+.seccion-productos {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.seccion-productos h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.btn-agregar-producto {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    fontWeight: 600;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.btn-agregar-producto:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(17, 153, 142, 0.4);
+}
+
+.tabla-productos-agregados {
+    margin-top: 1.5rem;
+    overflow-x: auto;
+}
+
+.acciones-entrada {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}

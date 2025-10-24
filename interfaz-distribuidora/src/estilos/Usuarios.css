@@ -1,0 +1,94 @@
+.usuarios-contenedor {
+    padding: 2rem;
+}
+
+.usuarios-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.usuarios-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.tabla-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-usuarios thead {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+}
+
+.tabla-usuarios th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.tabla-usuarios td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.tabla-usuarios tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.badge-rol {
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.rol-admin {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+.rol-gerente {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+}
+
+.rol-almacenista {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    color: white;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-contenido {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    animation: slideDown 0.3s ease-out;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+}
