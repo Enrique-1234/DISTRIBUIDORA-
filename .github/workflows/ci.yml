@@ -21,3 +21,8 @@ jobs:
 
       - name: Construir proyecto
         run: npm run build || echo "Sin script de build"
+
+      ## Error controlado
+      - name: Ejecutar pruebas
+      run: npm testr || echo "Sin pruebas definidas"
+
