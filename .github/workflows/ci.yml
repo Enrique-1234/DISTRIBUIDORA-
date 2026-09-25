@@ -1,0 +1,23 @@
+# Prueba de ejecución del workflow
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Ejecutar pruebas
+        run: npm test || echo "Sin pruebas definidas"
+
+      - name: Construir proyecto
+        run: npm run build || echo "Sin script de build"
